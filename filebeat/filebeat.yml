@@ -5,5 +5,12 @@ filebeat.prospectors:
     - /nginx-access.log
     - /nginx-error.log
 
+filebeat.modules:
+- module: nginx
+  access:
+    var.paths: 
+      - /nginx-access.log
+      - /nginx-error.log
+
 output.elasticsearch:
   hosts: ["tts.today:9200"]
