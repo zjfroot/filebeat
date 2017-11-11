@@ -1,5 +1,4 @@
-name: "thebetter.wiki"
-tags: ["thebetter.wiki"]
+tags: ["thebetter.wiki", "system-log"]
 
 
 fields_under_root: true
