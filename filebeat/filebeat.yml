@@ -1,3 +1,5 @@
+setup.dashboards.enabled: true
+
 filebeat.modules:
 - module: nginx
   access:
@@ -11,6 +13,8 @@ filebeat.modules:
   auth:
     enabled: true
     var.paths: ["/auth.log"]
+    fields: 
+      system: thebetter.wiki
 
 output.elasticsearch:
   hosts: ["tts.today:9200"]
