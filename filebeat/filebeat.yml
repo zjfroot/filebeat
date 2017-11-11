@@ -1,8 +1,3 @@
-filebeat.prospectors:
-- input_type: log
-  paths:
-    - /auth.log
-
 filebeat.modules:
 - module: nginx
   access:
@@ -11,6 +6,11 @@ filebeat.modules:
   error:
     var.paths: 
       - /nginx-error.log
+
+- module: system
+  auth:
+    enabled: true
+    var.paths: ["/auth.log"]
 
 output.elasticsearch:
   hosts: ["tts.today:9200"]
