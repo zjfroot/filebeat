@@ -1,6 +1,10 @@
+name: "thebetter.wiki"
+tags: ["thebetter.wiki"]
+
+
 fields_under_root: true
 fields:
-  application: thebetter.wiki
+  application: "thebetter.wiki"
 
 setup.dashboards.enabled: true
 
