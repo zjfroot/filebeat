@@ -2,6 +2,8 @@ filebeat.prospectors:
 - input_type: log
   paths:
     - /auth.log
+    - /nginx-access.log
+    - /nginx-error.log
 
 output.elasticsearch:
   hosts: ["tts.today:9200"]
