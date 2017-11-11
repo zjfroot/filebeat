@@ -8,6 +8,8 @@ filebeat.modules:
   access:
     var.paths: 
       - /nginx-access.log
+  error:
+    var.paths: 
       - /nginx-error.log
 
 output.elasticsearch:
