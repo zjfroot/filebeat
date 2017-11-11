@@ -1,3 +1,7 @@
+fields_under_root: true
+fields:
+  application: thebetter.wiki
+
 setup.dashboards.enabled: true
 
 filebeat.modules:
@@ -11,9 +15,6 @@ filebeat.modules:
 
 - module: system
   auth:
-    prospector:
-      fields: 
-        application: thebetter.wiki
     enabled: true
     var.paths: ["/auth.log"]
 
