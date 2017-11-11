@@ -1,0 +1,7 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+    - /auth.log
+
+output.elasticsearch:
+  hosts: ["tts.today:9200"]
